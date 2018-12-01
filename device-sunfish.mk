@@ -115,6 +115,10 @@ PRODUCT_PACKAGES += \
     SettingsOverlayG025M \
     SettingsOverlayG025N \
 
+# EUICC
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.telephony.euicc.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/android.hardware.telephony.euicc.xml
+
 # Fingerprint HIDL
 include device/google/sunfish/fingerprint.mk
 

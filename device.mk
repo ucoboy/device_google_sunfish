@@ -824,6 +824,11 @@ PRODUCT_PACKAGES += \
 # Properties
 TARGET_VENDOR_PROP := $(LOCAL_PATH)/vendor.prop
 
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/qcom/opensource/commonsys-intf/display \
+    vendor/qcom/opensource/display
+
 # Vendor seccomp policy files for media components:
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy

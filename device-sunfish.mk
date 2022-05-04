@@ -122,6 +122,10 @@ PRODUCT_COPY_FILES += \
 # Google Assistant
 PRODUCT_PRODUCT_PROPERTIES += ro.opa.eligible_device=true
 
+# HBM
+PRODUCT_PACKAGES += \
+    HbmSVManagerOverlay
+    
 # Fingerprint HIDL
 include device/google/sunfish/fingerprint.mk
 

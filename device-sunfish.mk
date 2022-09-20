@@ -18,7 +18,10 @@ PRODUCT_HARDWARE := sunfish
 
 include device/google/sunfish/device-common.mk
 
-DEVICE_PACKAGE_OVERLAYS += device/google/sunfish/sunfish/overlay
+# Overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay \
+    $(LOCAL_PATH)/overlay-xdroid
 
 # Display Device Config
 PRODUCT_COPY_FILES += \

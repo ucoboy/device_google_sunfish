@@ -45,7 +45,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_vendor.mk)
 $(call inherit-product, vendor/xdroid/config/common.mk)
 TARGET_SUPPORTS_QUICK_TAP := true
 XDROID_MAINTAINER := スフィヤン
-XDROID_BOOT := 1080
+TARGET_BOOT_ANIMATION_RES := 1080
 
 $(call inherit-product, device/google/sunfish/device-sunfish.mk)
 $(call inherit-product-if-exists, vendor/google_devices/sunfish/proprietary/device-vendor.mk)

@@ -4,11 +4,15 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common xdroid stuff.
-$(call inherit-product, vendor/xdroid/config/common.mk)
+# Inherit some common riceDroid stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/gms/Android.mk)
 TARGET_SUPPORTS_QUICK_TAP := true
-XDROID_MAINTAINER := スフィヤン
-XDROID_BOOT := 1080
+TARGET_FACE_UNLOCK_SUPPORTED := true
+RICE_MAINTAINER := スフィヤン
+RICE_CHIPSET := Snapdragon730G
+TARGET_ENABLE_BLUR := true
+WITH_GMS := true
 
 # Inherit device configuration
 $(call inherit-product, device/google/sunfish/aosp_sunfish.mk)
@@ -18,7 +22,7 @@ include device/google/sunfish/device-lineage.mk
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 4a
-PRODUCT_NAME := xdroid_sunfish
+PRODUCT_NAME := lineage_sunfish
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=sunfish \

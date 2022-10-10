@@ -5,6 +5,7 @@
 #
 
 # Inherit some common riceDroid stuff.
+TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, vendor/gms/Android.mk)
 TARGET_SUPPORTS_QUICK_TAP := true

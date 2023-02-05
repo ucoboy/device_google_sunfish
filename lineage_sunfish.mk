@@ -10,6 +10,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, vendor/gms/Android.mk)
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_ENABLE_PIXEL_GBOARD_PADDINGS := false
 RICE_MAINTAINER := xioyo
 RICE_CHIPSET := Snapdragon730G
 TARGET_ENABLE_BLUR := true

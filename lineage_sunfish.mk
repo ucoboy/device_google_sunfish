@@ -15,6 +15,7 @@ RICE_MAINTAINER := xioyo
 RICE_CHIPSET := Snapdragon730G
 TARGET_ENABLE_BLUR := true
 WITH_GMS := true
+SUSHI_BOOTANIMATION := 720
 
 # Inherit device configuration
 $(call inherit-product, device/google/sunfish/aosp_sunfish.mk)

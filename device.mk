@@ -882,7 +882,11 @@ PRODUCT_PACKAGES += $(HIDL_WRAPPER)
 
 # Increment the SVN for any official public releases
 PRODUCT_PROPERTY_OVERRIDES += \
-	ro.vendor.build.svn=53
+	ro.vendor.build.svn=57
+
+# Enforce privapp-permissions whitelist
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.control_privapp_permissions=log
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json

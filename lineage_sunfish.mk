@@ -4,18 +4,19 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common riceDroid stuff.
+# Inherit some common RisingOS stuff.
 TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, vendor/gms/Android.mk)
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_ENABLE_PIXEL_GBOARD_PADDINGS := false
-RICE_MAINTAINER := xioyo
-RICE_CHIPSET := Snapdragon730G
+RISING_MAINTAINER := xioyo
+RISING_CHIPSET := Snapdragon730G
 TARGET_ENABLE_BLUR := true
 WITH_GMS := true
-SUSHI_BOOTANIMATION := 720
+TARGET_USE_PIXEL_FINGERPRINT := false
+TARGET_USE_GOOGLE_TELEPHONY := true
 
 # Inherit device configuration
 $(call inherit-product, device/google/sunfish/aosp_sunfish.mk)

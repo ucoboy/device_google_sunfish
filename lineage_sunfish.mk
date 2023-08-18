@@ -29,8 +29,8 @@ PRODUCT_NAME := lineage_sunfish
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_PRODUCT=sunfish \
-    PRIVATE_BUILD_DESC="sunfish-user 13 TQ1A.230205.002 9471150 release-keys"
+    PRIVATE_BUILD_DESC="sunfish-user 13 TQ3A.230805.001 10316531 release-keys"
 
-BUILD_FINGERPRINT := google/sunfish/sunfish:13/TQ1A.230205.002/9471150:user/release-keys
+BUILD_FINGERPRINT := google/sunfish/sunfish:13/TQ3A.230805.001/10316531:user/release-keys
 
 $(call inherit-product, vendor/google/sunfish/sunfish-vendor.mk)

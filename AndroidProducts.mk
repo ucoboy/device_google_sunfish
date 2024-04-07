@@ -21,4 +21,5 @@ PRODUCT_MAKEFILES := \
 COMMON_LUNCH_CHOICES := \
     aosp_sunfish-user \
     aosp_sunfish-userdebug \
-    aosp_sunfish-eng
+    aosp_sunfish-eng \
+    aosp_sunfish-trunk_staging-userdebug
